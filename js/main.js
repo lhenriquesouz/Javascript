@@ -1,7 +1,26 @@
 function clicar(){
-    alert("Você clicou no botão!");
+    document.getElementById("click").innerHTML = "Obrigado por clicar!";
+    // alert("Você clicou no botão!");
 }
 
+function redireciona(){
+    window.open("https://www.facebook.com/"); // abre a página que vc redirecionou em outra aba
+    // window.location.href = "https://www.facebook.com/"; abre a pagina que vc redirecionou na mesma página/aba
+}
+
+function trocar(elemento){
+    // document.getElementById("mousehover").innerHTML = "passou o mouse por cima";
+    elemento.innerHTML = "passou o mouse por cima";
+}
+
+function voltar(elemento){
+    // document.getElementById("mousehover").innerHTML = "Passe o mouse";
+    elemento.innerHTML = "Passe o mouse";
+}
+
+function funcaochange(elemento){
+    console.log(elemento.value);
+}
 /*function soma(n1, n2){
     return n1 + n2;
 }
